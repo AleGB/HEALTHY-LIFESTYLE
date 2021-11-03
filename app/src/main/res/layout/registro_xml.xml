@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.healthylifestyle.registro_java">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:id="@+id/saludo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="¡Hey, bienvenido a Healthy LifeStyle! Antes de comenzar necesitamos algunos datos, para que podamos empezar a trabajar. "
+                    android:textColor="?android:attr/colorActivatedHighlight"
+                    android:textSize="13dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <EditText
+                    android:id="@+id/usr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Usuario"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/edad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Edad"
+                    android:inputType="number"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="19dp" />
+
+                <TextView
+                    android:id="@+id/sexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:text="Sexo:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgsexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:orientation="horizontal"
+                    android:onClick="sexo">
+
+                    <Space
+                        android:layout_width="97dp"
+                        android:layout_height="34dp" />
+
+                    <RadioButton
+                        android:id="@+id/mujer"
+                        android:layout_width="99dp"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="@color/colorAccent"
+                        android:text="Mujer"
+                        android:onClick="sexo"/>
+
+                    <RadioButton
+                        android:id="@+id/hombre"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="@color/colorAccent"
+                        android:text="Hombre"
+                        android:onClick="sexo"/>
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/peso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Peso"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/altura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Altura"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp" />
+
+                <TextView
+                    android:id="@+id/tipoPer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:paddingStart="50dp"
+                    android:text="Tipo de persona"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/sedentaria"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:onClick="tipoPersona"
+                        android:shadowColor="@color/colorAccent"
+                        android:text="Sedentaria" />
+
+                    <CheckBox
+                        android:id="@+id/activa"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        android:onClick="tipoPersona"
+                        android:shadowColor="@color/colorAccent"
+                        android:text="Activa" />
+
+                    <Spinner
+                        android:id="@+id/tipoAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp" />
+
+                <EditText
+                    android:id="@+id/correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Correo electrónico"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/contraseña"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/confirmaContra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Confirma contrseña"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <Button
+                    android:id="@+id/registrarme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginRight="130dp"
+                    android:background="@drawable/azul_principal"
+                    android:text="REGISTRARME"
+                    android:textColor="@android:color/background_light" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

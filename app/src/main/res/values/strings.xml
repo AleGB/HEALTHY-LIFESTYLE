@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">healthyLifeStyle</string>
+    <string name="title_activity_registro_java">Regístrate!</string>
+    <string name="title_activity_imc_java">IMC</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registro_alimentos_java">Registro de comidas</string>
+    <string name="title_activity_registra_desayuno_java">Desayuno</string>
+    <string name="title_activity_registra_coluno_java">Registra comida de media tarde</string>
+    <string name="title_activity_registra_comida_java">Registra comida</string>
+    <string name="title_activity_registra_coldos_java">Registra media tarde</string>
+    <string name="title_activity_registra_cena_java">Registra cena</string>
+    <string name="title_activity_menus_java">Menús</string>
+    <string name="title_activity_ver_desa_java">Desayunos</string>
+    <string name="title_activity_ver_desa_1_java">Desayunos</string>
+    <string name="title_activity_ver_desa_2_java">Desayunos</string>
+    <string name="title_activity_ver_desa_3_java">Desayunos</string>
+    <string name="title_activity_ver_desa_4_java">Desayunos 4</string>
+    <string name="title_activity_ver_comida_java">Comidas</string>
+    <string name="title_activity_ver_comida_1_java">Comidas</string>
+    <string name="title_activity_ver_comida_2_java">Comidas</string>
+    <string name="title_activity_ver_comida_3_java">Comidas</string>
+    <string name="title_activity_ver_comida_4_java">Comidas</string>
+    <string name="title_activity_ver_cenas_java">Cenas</string>
+    <string name="title_activity_ver_cena_1_java">Cenas</string>
+    <string name="title_activity_ver_cena_2_java">Cenas</string>
+    <string name="title_activity_ver_cena_3_java">Cenas</string>
+    <string name="title_activity_ver_cena_4_java">Cenas</string>
+    <string name="title_activity_ver_rut_java">Rutinas de ejercicio</string>
+    <string name="title_activity_abdomen_java">Rutinas para abdomen</string>
+    <string name="title_activity_pesas_java">Ejercicios con pesas</string>
+    <string name="title_activity_cardio_java">Cardio</string>
+    <string name="title_activity_estiramientos_java">Estiramientos</string>
+    <string name="title_activity_nuevo_imc_java">Registrode Índice de mada corporal</string>
+</resources>

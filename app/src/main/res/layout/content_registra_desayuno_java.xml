@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.healthylifestyle.registraDesayuno_java"
+    tools:showIn="@layout/app_bar_registra_desayuno_java">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:id="@+id/desayuno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="Desayuno"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/indica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Selecciona los alimentos"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="395dp"
+                tools:layout_editor_absoluteY="158dp">
+
+
+                <Button
+                    android:id="@+id/agregaCereal"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/hueso"
+                    android:onClick="seleccionarCereales" />
+
+                <TextView
+                    android:id="@+id/cereales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/agregaCereal"
+                    android:layout_toRightOf="@+id/agregaCereal"
+                    android:text="Cereales"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/descricionCereal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cereales"
+                    android:layout_alignStart="@+id/cereales"
+                    android:layout_below="@+id/cereales"
+                    android:layout_marginBottom="40dp"
+                    android:text="Arroz, avena, tortillas..." />
+
+                <LinearLayout
+                    android:id="@+id/grupoCereales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/descricionCereal"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/frutas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grupoCereales"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_toEndOf="@+id/agregaFrutas"
+                    android:layout_toRightOf="@+id/agregaFrutas"
+                    android:text="Frutas"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/agregaFrutas"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/grupoCereales"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/naranja"
+                    android:onClick="seleccionarFrutas" />
+
+                <TextView
+                    android:id="@+id/descripcionFrutas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/frutas"
+                    android:layout_alignStart="@+id/frutas"
+                    android:layout_below="@+id/frutas"
+                    android:layout_marginBottom="40dp"
+                    android:text="Mango, sandía, agucate..." />
+
+                <LinearLayout
+                    android:id="@+id/grupoFrutas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/descripcionFrutas"
+                    android:orientation="vertical"></LinearLayout>
+
+                <Button
+                    android:id="@+id/agregaVerduras"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignLeft="@+id/agregaFrutas"
+                    android:layout_alignStart="@+id/agregaFrutas"
+                    android:layout_below="@+id/grupoFrutas"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/verde"
+                    android:onClick="seleccionarVerduras" />
+
+                <TextView
+                    android:id="@+id/verduras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/descripcionFrutas"
+                    android:layout_alignStart="@+id/descripcionFrutas"
+                    android:layout_alignTop="@+id/agregaVerduras"
+                    android:layout_marginTop="10dp"
+                    android:text="Verduras"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/descricionVerduras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/verduras"
+                    android:layout_alignStart="@+id/verduras"
+                    android:layout_below="@+id/verduras"
+                    android:layout_marginBottom="40dp"
+                    android:text="Brócoli, cebolla, tomate..." />
+
+                <LinearLayout
+                    android:id="@+id/grupoVerduras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/descricionVerduras"
+                    android:orientation="vertical"></LinearLayout>
+
+                <Button
+                    android:id="@+id/agregaLegumi"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/grupoVerduras"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/rojo"
+                    android:onClick="seleccionarLegumi" />
+
+                <TextView
+                    android:id="@+id/legumi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/descricionVerduras"
+                    android:layout_alignStart="@+id/descricionVerduras"
+                    android:layout_alignTop="@+id/agregaLegumi"
+                    android:layout_marginTop="11dp"
+                    android:text="Leguminosas y de origen animal"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/descripcionLegumi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/legumi"
+                    android:layout_alignStart="@+id/legumi"
+                    android:layout_below="@+id/legumi"
+                    android:layout_marginBottom="40dp"
+                    android:text="Frijoles, pollo, jamón..." />
+
+                <LinearLayout
+                    android:id="@+id/grupoLegumi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/descripcionLegumi"
+                    android:orientation="vertical"></LinearLayout>
+
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/aceptar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/azul_principal"
+                android:text="CALCULAR"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

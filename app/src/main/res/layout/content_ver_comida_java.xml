@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.healthylifestyle.ver_comida_java"
+    tools:showIn="@layout/app_bar_ver_comida_java">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/desayuno4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/descripcionC4"
+            android:layout_alignStart="@+id/descripcionC4"
+            android:layout_alignTop="@+id/imgC4"
+            android:layout_marginTop="11dp"
+            android:text="Comida 4"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/descripcionC4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/descripcionD3"
+            android:layout_alignStart="@+id/descripcionD3"
+            android:layout_below="@+id/desayuno4"
+            android:layout_marginTop="22dp"
+            android:text="Descripción comida 4" />
+
+        <ImageView
+            android:id="@+id/imgC4"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/imgD3"
+            android:layout_alignStart="@+id/imgD3"
+            android:layout_below="@+id/imgD3"
+            android:layout_marginEnd="63dp"
+            android:layout_marginRight="63dp"
+            android:layout_marginTop="30dp"
+            android:onClick="verComida4"
+            app:srcCompat="@drawable/comida4" />
+
+        <TextView
+            android:id="@+id/desayuno3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/descripcionC2"
+            android:layout_alignStart="@+id/descripcionC2"
+            android:layout_alignTop="@+id/imgD3"
+            android:layout_marginTop="16dp"
+            android:text="Comida 3"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imgD3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/imgC2"
+            android:layout_alignStart="@+id/imgC2"
+            android:layout_below="@+id/imgC2"
+            android:layout_marginEnd="63dp"
+            android:layout_marginRight="63dp"
+            android:layout_marginTop="30dp"
+            android:onClick="verComida3"
+            app:srcCompat="@drawable/comida3" />
+
+        <TextView
+            android:id="@+id/descripcionD3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/desayuno3"
+            android:layout_alignStart="@+id/desayuno3"
+            android:layout_below="@+id/desayuno3"
+            android:layout_marginTop="16dp"
+            android:text="Descripción comida 3" />
+
+        <TextView
+            android:id="@+id/descripcionD1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgD1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:onClick="verComida1"
+            android:text="Descripción comida 1" />
+
+        <TextView
+            android:id="@+id/desayuno2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/descripcionC2"
+            android:layout_alignLeft="@+id/descripcionD1"
+            android:layout_alignStart="@+id/descripcionD1"
+            android:layout_marginBottom="11dp"
+            android:text="Comida 2"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imgD1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="63dp"
+            android:layout_marginRight="63dp"
+            android:layout_marginTop="30dp"
+            android:onClick="verComida1"
+            app:srcCompat="@drawable/comida1" />
+
+        <TextView
+            android:id="@+id/comida1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/descripcionD1"
+            android:layout_alignStart="@+id/descripcionD1"
+            android:layout_alignTop="@+id/imgD1"
+            android:layout_marginTop="23dp"
+            android:onClick="verComida1"
+            android:text="Comida 1"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/descripcionC2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imgD3"
+            android:layout_alignLeft="@+id/desayuno2"
+            android:layout_alignStart="@+id/desayuno2"
+            android:layout_marginBottom="22dp"
+            android:text="Descripción comida 2" />
+
+        <ImageView
+            android:id="@+id/imgC2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/imgD1"
+            android:layout_alignStart="@+id/imgD1"
+            android:layout_below="@+id/imgD1"
+            android:layout_marginEnd="63dp"
+            android:layout_marginRight="63dp"
+            android:layout_marginTop="30dp"
+            android:onClick="verComida2"
+            app:srcCompat="@drawable/comida2" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

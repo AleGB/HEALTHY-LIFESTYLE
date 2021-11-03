@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.healthylifestyle">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="Healthy LifeStyle"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".iniciosesion_java">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".registro_java" />
+        <activity
+            android:name=".imc_java"
+            android:label="@string/title_activity_imc_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".registroAlimentos_java"
+            android:label="Mis calorías"
+            android:parentActivityName=".imc_java"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.user.healthylifestyle.imc_java" />
+        </activity>
+        <activity
+            android:name=".registraDesayuno_java"
+            android:label="Mis calorías"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".registra_coluno_java"
+            android:label="Mis calorías"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".registra_comida_java"
+            android:label="Mis calorías"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".registra_coldos_java"
+            android:label="Mis calorías"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".registra_cena_java"
+            android:label="Mis calorías"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menus_java"
+            android:label="@string/title_activity_menus_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_desa_java"
+            android:label="Menús para desayuno"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_desa_1_java"
+            android:label="@string/title_activity_ver_desa_1_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_desa_2_java"
+            android:label="@string/title_activity_ver_desa_2_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_desa_3_java"
+            android:label="@string/title_activity_ver_desa_3_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_desa_4_java"
+            android:label="Desayunos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_comida_java"
+            android:label="Menús para comida"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_comida_1_java"
+            android:label="@string/title_activity_ver_comida_1_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_comida_2_java"
+            android:label="@string/title_activity_ver_comida_2_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_comida_3_java"
+            android:label="@string/title_activity_ver_comida_3_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_comida_4_java"
+            android:label="@string/title_activity_ver_comida_4_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_cenas_java"
+            android:label="Menús para cena"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_cena_1_java"
+            android:label="@string/title_activity_ver_cena_1_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_cena_2_java"
+            android:label="@string/title_activity_ver_cena_2_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_cena_3_java"
+            android:label="@string/title_activity_ver_cena_3_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_cena_4_java"
+            android:label="@string/title_activity_ver_cena_4_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ver_rut_java"
+            android:label="@string/title_activity_ver_rut_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".abdomen_java"
+            android:label="@string/title_activity_abdomen_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pesas_java"
+            android:label="@string/title_activity_pesas_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".cardio_java"
+            android:label="@string/title_activity_cardio_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".estiramientos_java"
+            android:label="@string/title_activity_estiramientos_java"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nuevo_imc_java"
+            android:label="Registro de nuevo IMC"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".valida_correo_java"></activity>
+    </application>
+
+</manifest>

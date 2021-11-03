@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.healthylifestyle.menus_java"
+    tools:showIn="@layout/app_bar_menus_java">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/pregunta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="¿Para qué comida deseas ver opciones?"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="75sp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="97dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/desayuno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="Desayuno"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/comida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Comida"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="30sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgDesayuno"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/imagen_redonda"
+                    app:srcCompat="@drawable/desayuno"
+                    android:onClick="verDesayunos"/>
+
+                <ImageView
+                    android:id="@+id/imgComida"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    app:srcCompat="@drawable/comida"
+                    android:onClick="verComidas"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cena"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Cena"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgCena"
+                    android:layout_width="175dp"
+                    android:layout_height="125dp"
+                    app:srcCompat="@drawable/cena"
+                    android:onClick="verCenas"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
